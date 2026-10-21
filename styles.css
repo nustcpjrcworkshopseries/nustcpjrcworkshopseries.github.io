@@ -184,8 +184,10 @@ p { margin: 0 0 1em; }
 .hero__org { position: relative; width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 24px var(--gutter) 32px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
 .hero__org p { margin: 0; font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); }
 .hero__org ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 14px 32px; }
-.hero__org li { display: flex; align-items: center; gap: 12px; font-size: 13.5px; color: rgba(255,255,255,.8); max-width: 360px; line-height: 1.4; }
-.hero__org img { width: 44px; height: 44px; border-radius: 50%; background: #fff; padding: 2px; flex-shrink: 0; }
+.org-tile { display: flex; align-items: center; gap: 12px; height: 68px; padding: 8px 18px 8px 8px; background: #fff; border-radius: 14px; box-shadow: 0 10px 30px -12px rgba(0,0,0,.45); }
+.org-tile img { height: 52px; width: auto; flex-shrink: 0; }
+.org-tile span { font-size: 13px; font-weight: 600; line-height: 1.3; color: var(--ink); max-width: 210px; }
+.org-tile:not(.org-tile--cpjrc) { padding: 8px 18px; }
 
 /* ---------- Facts ---------- */
 .facts { background: var(--white); border-bottom: 1px solid var(--line); }
@@ -273,7 +275,7 @@ p { margin: 0 0 1em; }
 .outcomes li::before { content: counter(o, decimal-leading-zero); position: absolute; left: 0; top: 16px; font-family: var(--serif); font-size: 26px; font-weight: 300; color: var(--accent); line-height: 1.2; }
 
 /* ---------- Faculty ---------- */
-.faculty { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.faculty { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .person { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 28px; transition: transform .25s, box-shadow .25s; }
 .person:hover { transform: translateY(-3px); box-shadow: 0 24px 40px -26px rgba(15,27,45,.35); }
 .person__mono {
@@ -282,8 +284,6 @@ p { margin: 0 0 1em; }
 }
 .person h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; margin-bottom: 4px; }
 .person__role { font-size: 13.5px; color: var(--accent-dark); font-weight: 500; margin-bottom: 14px; }
-.person--tba { background: transparent; border-style: dashed; border-color: #d6cfc2; }
-.person--tba .person__mono svg { width: 26px; height: 26px; }
 .person p:last-child { margin: 0; font-size: 15px; color: var(--muted); }
 
 /* ---------- Registration ---------- */
@@ -345,8 +345,10 @@ p { margin: 0 0 1em; }
 .footer { background: var(--ink); color: #8d98aa; padding: 48px 0; font-size: 14px; }
 .footer__inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 .footer__inner p { margin: 0; }
+.footer__inner p:not(.footer__small) { flex: 1 1 320px; max-width: 560px; }
 .footer__logos { display: flex; gap: 10px; }
-.footer__logos img { width: 40px; height: 40px; border-radius: 50%; background: #fff; padding: 2px; }
+.footer__logos { background: #fff; border-radius: 12px; padding: 6px 12px; align-items: center; }
+.footer__logos img { height: 44px; width: auto; }
 .footer__small { margin-left: auto !important; }
 
 /* ---------- Reveal on scroll ---------- */
@@ -355,8 +357,6 @@ p { margin: 0 0 1em; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
-  .faculty { grid-template-columns: repeat(2, 1fr); }
-  .faculty .person--tba { grid-column: 1 / -1; }
   .facts__grid { grid-template-columns: repeat(2, 1fr); }
   .facts__grid > div:nth-child(3) { border-left: 0; padding-left: 0; }
   .facts__grid > div:nth-child(n+3) { border-top: 1px solid var(--line); }
@@ -393,6 +393,10 @@ p { margin: 0 0 1em; }
   .hero__actions .btn { flex: 1 1 100%; justify-content: center; }
   .countdown div { min-width: 0; flex: 1; }
   .hero__org { gap: 14px; }
+  .hero__org ul { gap: 10px; }
+  .org-tile { height: 60px; }
+  .org-tile img { height: 44px; }
+  .org-tile span { font-size: 12px; max-width: 180px; }
   .facts__grid { grid-template-columns: 1fr; }
   .facts__grid > div { border-left: 0 !important; padding: 22px 0 !important; }
   .facts__grid > div + div { border-top: 1px solid var(--line); }

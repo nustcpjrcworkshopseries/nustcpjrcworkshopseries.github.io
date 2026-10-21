@@ -90,10 +90,10 @@
     </div>
 
     <div class="hero__org">
-      <p>Jointly organised by</p>
+      <p>Jointly organized by</p>
       <ul>
-        <li><img src="assets/cpjrc-logo.png" alt="" width="44" height="44"><span>China–Pakistan Joint Research Center on Earth Sciences (CPJRC)</span></li>
-        <li><img src="assets/nust-logo.png" alt="" width="44" height="44"><span>Institute of Geographical Information Systems, School of Civil and Environmental Engineering, NUST</span></li>
+        <li class="org-tile org-tile--cpjrc"><img src="assets/cpjrc-logo.png" alt="" width="52" height="52"><span>China–Pakistan Joint Research Center on Earth Sciences</span></li>
+        <li class="org-tile"><img src="assets/igis-logo.png" alt="IGIS, Institute of Geographical Information Systems, NUST" width="158" height="53"></li>
       </ul>
     </div>
   </section>
@@ -106,7 +106,7 @@
         <div><strong>2½</strong><span>days, 18–20 November 2026</span></div>
         <div><strong>15</strong><span>contact hours of lectures, labs and fieldwork</span></div>
         <div><strong>30</strong><span>participants, in six field groups of five</span></div>
-        <div><strong>5</strong><span>lecturers from CPJRC and NUST</span></div>
+        <div><strong>4</strong><span>lecturers from CAS and NUST</span></div>
       </div>
     </section>
 
@@ -165,7 +165,7 @@
             <li>Universities &amp; research institutes</li>
           </ul>
           <ul class="notes">
-            <li><b>About 30 seats.</b> Nominations through parent organisations, up to four per institution.</li>
+            <li><b>About 30 seats.</b> Nominations through parent organizations, up to four per institution.</li>
             <li><b>Full attendance required.</b> The Day 2 field session and Day 3 capstone build directly on earlier work.</li>
             <li><b>No coding or flying experience needed.</b> Basic familiarity with maps, coordinates and GIS is enough.</li>
           </ul>
@@ -196,7 +196,7 @@
                 <li class="slot"><details><summary><time>09:00–09:20</time><span>Opening ceremony</span></summary>
                   <p>Welcome address, workshop inauguration, and statement of course objectives.</p></details></li>
                 <li class="slot"><details><summary><time>09:20–10:10</time><span>Module 1 · Foundations of remote sensing across scales</span></summary>
-                  <p>Passive versus active sensing. The resolution quartet (spatial, spectral, temporal, radiometric) and why all four cannot be maximised at once. The swath-versus-resolution trade-off. What “large-scale” changes: data volume, radiometric consistency, cloud cover and processing throughput. The continuum from satellite constellations to manned aerial surveys, UAVs and ground surveys, and the reporting scale each supports. Where Earth observation enters each phase of the disaster management cycle.</p></details></li>
+                  <p>Passive versus active sensing. The resolution quartet (spatial, spectral, temporal, radiometric) and why all four cannot be maximized at once. The swath-versus-resolution trade-off. What “large-scale” changes: data volume, radiometric consistency, cloud cover and processing throughput. The continuum from satellite constellations to manned aerial surveys, UAVs and ground surveys, and the reporting scale each supports. Where Earth observation enters each phase of the disaster management cycle.</p></details></li>
                 <li class="slot"><details><summary><time>10:10–10:55</time><span>Module 2 · Data access and international emergency mapping</span></summary>
                   <p>Sentinel-1, -2 and -3; Landsat 8 and 9; MODIS and VIIRS; GPM IMERG; Copernicus and NASADEM elevation models; when commercial very-high-resolution tasking is justified. Revisit arithmetic under monsoon cloud. Analysis-Ready Data and the workload it removes. Live walkthrough of the Copernicus Data Space Ecosystem and the Google Earth Engine catalogue. The International Charter “Space and Major Disasters”, Copernicus EMS Rapid Mapping, Sentinel Asia and UN-SPIDER, with emphasis on how a Pakistani agency requests activation and realistic delivery timelines.</p></details></li>
                 <li class="slot slot--break"><time>10:55–11:10</time><span>Tea break</span></li>
@@ -206,7 +206,7 @@
                 <li class="slot"><details><summary><time>13:30–14:00</time><span>Lab 0 · Environment check</span></summary>
                   <p>Orientation to the Earth Engine Code Editor, the shared script repository, running a first script and troubleshooting logins. An offline data package for anyone whose access has failed.</p></details></li>
                 <li class="slot"><details><summary><time>14:00–15:30</time><span>Lab 1A · Rapid flood mapping from Sentinel-1 SAR</span></summary>
-                  <p>Why SAR for floods: cloud penetration and the specular reflection of open water. Pre- and post-event Sentinel-1 GRD imagery in VV polarisation; speckle filtering; change-detection ratio and histogram thresholding; terrain masking with slope and Height Above Nearest Drainage to suppress radar-shadow false positives. Output: a flood extent layer for the August–September 2022 Sindh floods.</p></details></li>
+                  <p>Why SAR for floods: cloud penetration and the specular reflection of open water. Pre- and post-event Sentinel-1 GRD imagery in VV polarization; speckle filtering; change-detection ratio and histogram thresholding; terrain masking with slope and Height Above Nearest Drainage to suppress radar-shadow false positives. Output: a flood extent layer for the August–September 2022 Sindh floods.</p></details></li>
                 <li class="slot slot--break"><time>15:30–15:45</time><span>Tea break</span></li>
                 <li class="slot"><details><summary><time>15:45–16:20</time><span>Lab 1B · Exposure and impact quantification</span></summary>
                   <p>Intersecting flood extent with WorldPop population, ESA WorldCover cropland and OpenStreetMap roads and settlements to build a district-wise exposure table. Error sources (permanent water, under-detected urban flooding, vegetated floodplain) and identifying the sub-areas where those limits justify an aerial survey.</p></details></li>
@@ -233,7 +233,7 @@
                   <p>On-site verification of coverage, overlap and image quality; completing the flight log; transferring imagery to the processing workstations.</p></details></li>
                 <li class="slot slot--break"><time>12:00–13:30</time><span>Lunch and prayers · return to IGIS</span></li>
                 <li class="slot"><details><summary><time>13:30–15:15</time><span>Lab 3A · Photogrammetric processing</span></summary>
-                  <p>UAV data products and the processing chain: POS data organisation; image pre-processing and quality screening; rapid stitching for first-look products; alignment, registration and correction; dense reconstruction; DSM and orthomosaic generation; georeferencing to ground control and accuracy reporting; export. A rapid field product compared with a fully processed one, and the time cost of each.</p></details></li>
+                  <p>UAV data products and the processing chain: POS data organization; image pre-processing and quality screening; rapid stitching for first-look products; alignment, registration and correction; dense reconstruction; DSM and orthomosaic generation; georeferencing to ground control and accuracy reporting; export. A rapid field product compared with a fully processed one, and the time cost of each.</p></details></li>
                 <li class="slot slot--break"><time>15:15–15:30</time><span>Tea break</span></li>
                 <li class="slot"><details><summary><time>15:30–17:00</time><span>Lab 3B · 3D modelling and damage quantification</span></summary>
                   <p>Oblique photogrammetry from acquisition through checking, import, adjustment, modelling and output. Change detection between epochs for rapid loss assessment; landslide displacement from differenced surface models; building damage classes and damaged road length. Reconciling these figures with the satellite exposure table from Lab 1.</p></details></li>
@@ -252,7 +252,7 @@
               <h3>Integration, case studies &amp; rapid-response simulation</h3>
               <ol class="slots">
                 <li class="slot"><details><summary><time>09:00–09:35</time><span>Module 4 · Integrating the observation chain</span></summary>
-                  <p>Designing a nested assessment: satellite screening to bound the event, coarse exposure estimation to prioritise, UAV tasking of priority sub-areas, and ground validation. Where the handovers sit in time, who authorises each, and the realistic latency of each stage. UAV surveys as reference data for validating satellite classifications, and the sampling design that makes this valid. Propagating uncertainty, and reporting a figure that will be challenged in a compensation process.</p></details></li>
+                  <p>Designing a nested assessment: satellite screening to bound the event, coarse exposure estimation to prioritize, UAV tasking of priority sub-areas, and ground validation. Where the handovers sit in time, who authorizes each, and the realistic latency of each stage. UAV surveys as reference data for validating satellite classifications, and the sampling design that makes this valid. Propagating uncertainty, and reporting a figure that will be challenged in a compensation process.</p></details></li>
                 <li class="slot"><details><summary><time>09:35–10:15</time><span>Applied case studies</span></summary>
                   <ul>
                     <li>Flood risk assessment of Attabad Lake using a scenario-based approach for disaster preparedness.</li>
@@ -299,28 +299,32 @@
         <div class="section__head">
           <p class="eyebrow">05 · Faculty</p>
           <h2 class="section__title">Learn from the people who do the work.</h2>
-          <p class="section__intro">Delivered jointly by two experts nominated by CPJRC and three faculty members of IGIS, SCEE, NUST.</p>
+          <p class="section__intro">Delivered jointly by experts from the Institute of Mountain Hazards and Environment, Chinese Academy of Sciences, nominated by CPJRC, and faculty of IGIS, SCEE, NUST.</p>
         </div>
         <ul class="faculty">
           <li class="person">
+            <span class="person__mono" aria-hidden="true">NY</span>
+            <h3>Dr. NIE Yong</h3>
+            <p class="person__role">Professor · Institute of Mountain Hazards and Environment (IMHE), CAS</p>
+            <p>Nominated by CPJRC. Full profile coming soon.</p>
+          </li>
+          <li class="person">
+            <span class="person__mono" aria-hidden="true">WW</span>
+            <h3>Engr. WANG Wen</h3>
+            <p class="person__role">Assistant Engineer · Institute of Mountain Hazards and Environment (IMHE), CAS</p>
+            <p>Nominated by CPJRC. Full profile coming soon.</p>
+          </li>
+          <li class="person">
             <span class="person__mono" aria-hidden="true">JI</span>
             <h3>Dr. Javed Iqbal</h3>
-            <p class="person__role">Professor · IGIS, SCEE, NUST</p>
+            <p class="person__role">Professor · SCEE – IGIS, NUST</p>
             <p>Over three decades of teaching, research and leadership; PhD from Mississippi State University and MS from the University of Arkansas. Works on soil science, GIS and remote sensing, and hazard mapping of landslides, glacier avalanches and flash floods. More than 200 scholarly contributions (h-index 29); supervised over 100 MS and 4 PhD students; funding from DAAD, NSF and Erasmus.</p>
           </li>
           <li class="person">
             <span class="person__mono" aria-hidden="true">SK</span>
             <h3>Dr. Shahid Nawaz Khan</h3>
-            <p class="person__role">Assistant Professor of Geoinformatics · IGIS, SCEE, NUST</p>
+            <p class="person__role">Assistant Professor · SCEE – IGIS, NUST</p>
             <p>PhD in Remote Sensing (University of Alabama) and MS in GIScience (South Dakota State University); President’s and Rector’s Gold Medals at NUST. Researches explainable, spatially explicit machine learning for Earth observation, SAR–optical fusion, large-scale Earth Engine workflows and UAV remote sensing. FAA Part 107-certified remote pilot with 200+ flight hours.</p>
-          </li>
-          <li class="person person--tba">
-            <span class="person__mono" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
-            </span>
-            <h3>CPJRC experts</h3>
-            <p class="person__role">Two lecturers nominated by CPJRC</p>
-            <p>Two international experts nominated by the China–Pakistan Joint Research Center on Earth Sciences will lead sessions across the programme. Names will be announced here.</p>
           </li>
         </ul>
       </div>
@@ -355,7 +359,7 @@
           <h2 class="section__title">Reserve your seat.</h2>
           <p class="fee"><span class="fee__amount">PKR 10,000</span><span class="fee__label">registration fee per participant</span></p>
           <ol class="steps">
-            <li><b>Get nominated.</b> Seats are filled through parent organisations, up to four per institution.</li>
+            <li><b>Get nominated.</b> Seats are filled through parent organizations, up to four per institution.</li>
             <li><b>Fill in the form.</b> Submit the online registration form with your details and affiliation.</li>
             <li><b>Pay the fee.</b> Transfer PKR 10,000 to the account shown here, with <q>Multi-Scale RS Workshop 2026</q> and your name in the remarks.</li>
             <li><b>Get confirmation.</b> We confirm your seat by email once payment is verified.</li>
@@ -424,10 +428,10 @@
   <footer class="footer">
     <div class="wrap footer__inner">
       <div class="footer__logos">
-        <img src="assets/cpjrc-logo.png" alt="CPJRC logo" width="40" height="40" loading="lazy">
-        <img src="assets/nust-logo.png" alt="NUST logo" width="40" height="40" loading="lazy">
+        <img src="assets/cpjrc-logo.png" alt="CPJRC logo" width="48" height="48" loading="lazy">
+        <img src="assets/igis-logo.png" alt="IGIS, NUST logo" width="144" height="48" loading="lazy">
       </div>
-      <p>Organised by the China–Pakistan Joint Research Center on Earth Sciences and IGIS, School of Civil and Environmental Engineering, NUST, Islamabad.</p>
+      <p>Organized by the China–Pakistan Joint Research Center on Earth Sciences and IGIS, School of Civil and Environmental Engineering, NUST, Islamabad.</p>
       <p class="footer__small">© 2026 NUST × CPJRC Workshop Series</p>
     </div>
   </footer>

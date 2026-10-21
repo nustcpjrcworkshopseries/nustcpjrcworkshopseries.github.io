@@ -157,9 +157,10 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
     url("../assets/hero.jpg") 35% 30% / cover no-repeat, var(--ink);
 }
 .page--cover .page__in { display: flex; flex-direction: column; padding: 8cqw; }
-.cover__logos { display: flex; gap: 3cqw; align-items: center; background: #fff; border-radius: 3cqw; padding: 2.4cqw 3.6cqw; align-self: flex-start; }
-.cover__logos img { height: 15cqw; width: auto; }
-.cover__logos img + img { height: 13cqw; }
+.cover__logos { display: flex; gap: 4.5cqw; align-items: center; align-self: flex-start; }
+.cover__logos img { height: 16cqw; width: auto; }
+.cover__logos img:first-child { border-radius: 50%; background: #fff; }
+.cover__logos img + img { height: 14cqw; }
 .cover__eyebrow { margin: auto 0 1em !important; font-size: .85em; letter-spacing: .18em; text-transform: uppercase; color: var(--sand); font-weight: 600; }
 .cover__title { font-family: var(--serif); font-weight: 300; font-size: 4.3em; line-height: 1.03; letter-spacing: -.02em; margin: 0 0 .45em; color: #fff; }
 .cover__title em { display: block; font-style: italic; color: var(--sand); }

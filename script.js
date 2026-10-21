@@ -1,11 +1,10 @@
 // ==========================================================
-// Event settings — edit these once the 2026 dates are fixed.
-// Leave `start` as null to show "dates to be announced" and hide the countdown.
-// Example: start: '2026-11-16T09:00:00+05:00', end: '2026-11-19T17:00:00+05:00'
+// Event settings: the countdown runs to `start`; dates in the page use start and end.
+// Set `start` to null to show the fallback text in index.html and hide the countdown.
 // ==========================================================
 const EVENT = {
-  start: null,
-  end: null
+  start: '2026-11-18T09:00:00+05:00',
+  end: '2026-11-20T12:15:00+05:00'
 };
 
 // ---------- Dates & countdown ----------
@@ -106,7 +105,7 @@ document.querySelectorAll('.copy').forEach((btn) => {
 // ---------- Gentle reveal on scroll ----------
 (function () {
   if (!('IntersectionObserver' in window)) return;
-  const items = document.querySelectorAll('.section__head, .about__text, .about__figure, .day, .person, .register > *, .venue > *');
+  const items = document.querySelectorAll('.section__head, .about__text, .about__figure, .chain, .audience-band > *, .day, .outcomes, .person, .prepare > *, .register > *, .venue > *');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (en.isIntersecting) {

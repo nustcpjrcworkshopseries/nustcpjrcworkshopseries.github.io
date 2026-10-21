@@ -1,7 +1,8 @@
 # NUST × CPJRC Workshop Series — 2026
 
-One-page site for the 2026 edition of the **UAV Remote Sensing for Disaster Management** training,
-jointly organised by the China–Pakistan Joint Research Center on Earth Sciences (CPJRC), IGIS and SCEE, NUST.
+One-page site for the **Training Workshop on Multi-Scale Remote Sensing for Disaster Management**
+(18–20 November 2026), jointly organised by the China–Pakistan Joint Research Center on Earth Sciences (CPJRC)
+and IGIS, School of Civil and Environmental Engineering, NUST.
 
 Plain HTML/CSS/JS served by GitHub Pages, with no build step.
 
@@ -15,8 +16,7 @@ Plain HTML/CSS/JS served by GitHub Pages, with no build step.
 Edit the `EVENT` object at the top of `script.js`, e.g.
 
 ```js
-const EVENT = { start: '2026-11-16T09:00:00+05:00', end: '2026-11-19T17:00:00+05:00' };
+const EVENT = { start: '2026-11-18T09:00:00+05:00', end: '2026-11-20T12:15:00+05:00' };
 ```
 
-The dates in the header update automatically and a live countdown appears.
-While `start` is `null` the page shows "dates to be announced".
+The countdown in the header runs to `start`. Set `start` to `null` to hide it.

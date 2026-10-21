@@ -20,3 +20,13 @@ const EVENT = { start: '2026-11-18T09:00:00+05:00', end: '2026-11-20T12:15:00+05
 ```
 
 The countdown in the header runs to `start`. Set `start` to `null` to hide it.
+
+## Programme booklet
+
+`booklet/` is a page-turning version of the programme (uses the MIT-licensed
+[StPageFlip](https://github.com/Nodlik/StPageFlip), vendored in `booklet/vendor/`).
+After changing its content, regenerate the PDF from the same pages:
+
+```bash
+node tools/build-booklet-pdf.mjs
+```

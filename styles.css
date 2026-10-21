@@ -75,6 +75,8 @@ p { margin: 0 0 1em; }
 }
 .section__intro { color: var(--muted); font-size: 18px; }
 .section__intro strong { color: var(--ink); font-weight: 600; }
+.booklet-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.booklet-links .btn:hover svg { transform: none; }
 
 .btn {
   display: inline-flex; align-items: center; gap: 10px;

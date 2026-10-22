@@ -164,7 +164,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .cover__logos img:first-child { border-radius: 50%; background: #fff; }
 .cover__logos img + img { height: 10.5cqw; }
 .cover__logos { gap: 3.2cqw; }
-.org-text { font-family: var(--serif); font-size: 3.4cqw; line-height: 1.2; color: #fff; white-space: nowrap; text-align: left; }
+.cover__logos img.logo-gsp { height: 12.5cqw; border-radius: 50%; }
 .cover__eyebrow { margin: auto 0 1em !important; font-size: .85em; letter-spacing: .18em; text-transform: uppercase; color: var(--sand); font-weight: 600; }
 .cover__title { font-family: var(--serif); font-weight: 300; font-size: 4.3em; line-height: 1.03; letter-spacing: -.02em; margin: 0 0 .45em; color: #fff; }
 .cover__title em { display: block; font-style: italic; color: var(--sand); }

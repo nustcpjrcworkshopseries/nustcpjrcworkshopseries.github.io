@@ -190,8 +190,7 @@ p { margin: 0 0 1em; }
 .org-tile img { height: 112px; width: auto; }
 .org-tile--cpjrc img { border-radius: 50%; background: #fff; box-shadow: 0 10px 28px -12px rgba(0,0,0,.6); }
 .org-tile--igis img { height: 100px; }
-/* organizer named in text (no logo) */
-.org-text { display: block; font-family: var(--serif); font-size: 26px; line-height: 1.2; color: #fff; white-space: nowrap; }
+.org-tile--gsp img { border-radius: 50%; box-shadow: 0 10px 28px -12px rgba(0,0,0,.6); }
 
 /* ---------- Facts ---------- */
 .facts { background: var(--white); border-bottom: 1px solid var(--line); }
@@ -359,6 +358,7 @@ p { margin: 0 0 1em; }
 .footer__logos img { height: 64px; width: auto; }
 .footer__logos img:first-child { border-radius: 50%; background: #fff; }
 .footer__logos img + img { height: 58px; }
+.footer__logos img.footer__gsp { height: 64px; }
 .footer__small { margin-left: auto !important; align-self: flex-end; }
 
 /* ---------- Reveal on scroll ---------- */
@@ -408,8 +408,6 @@ p { margin: 0 0 1em; }
   .org-tile img { height: 84px; }
   .org-tile--igis img { height: auto; width: 100%; max-width: 230px; }
   .org-tile--igis { min-width: 0; flex: 1; }
-  .org-text { font-size: 21px; }
-  .org-tile--gsp { flex-basis: 100%; }
   .footer__logos { flex-wrap: wrap; }
   .facts__grid { grid-template-columns: 1fr; }
   .facts__grid > div { border-left: 0 !important; padding: 22px 0 !important; }

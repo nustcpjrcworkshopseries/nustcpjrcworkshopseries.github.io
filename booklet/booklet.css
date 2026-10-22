@@ -164,10 +164,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .cover__logos img:first-child { border-radius: 50%; background: #fff; }
 .cover__logos img + img { height: 10.5cqw; }
 .cover__logos { gap: 3.2cqw; }
-.org-mark { display: inline-flex; align-items: center; gap: 1.6cqw; height: 10.5cqw; color: #fff; white-space: nowrap; }
-.org-mark::before { content: ""; align-self: stretch; width: .7cqw; border-radius: .3cqw; background: linear-gradient(180deg, #c8893b 0 40%, #e3b98a 40% 70%, #f0d6b6 70%); }
-.org-mark b { font-family: var(--serif); font-weight: 400; font-size: 6.4cqw; line-height: 1; color: #fff; }
-.org-mark small { font-size: 1.5cqw; line-height: 1.25; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.85); text-align: left; }
+.org-text { font-family: var(--serif); font-size: 3.4cqw; line-height: 1.2; color: #fff; white-space: nowrap; text-align: left; }
 .cover__eyebrow { margin: auto 0 1em !important; font-size: .85em; letter-spacing: .18em; text-transform: uppercase; color: var(--sand); font-weight: 600; }
 .cover__title { font-family: var(--serif); font-weight: 300; font-size: 4.3em; line-height: 1.03; letter-spacing: -.02em; margin: 0 0 .45em; color: #fff; }
 .cover__title em { display: block; font-style: italic; color: var(--sand); }

@@ -168,7 +168,7 @@ p { margin: 0 0 1em; }
   font-size: clamp(40px, 6.2vw, 80px); line-height: 1.04; letter-spacing: -.025em;
   max-width: 17ch; margin-bottom: 24px;
 }
-.hero__title span { font-style: italic; color: var(--sand); font-weight: 300; }
+.hero__title span { display: block; font-style: italic; color: var(--sand); font-weight: 300; }
 .hero__lead { max-width: 600px; font-size: clamp(17px, 1.6vw, 19px); color: rgba(255,255,255,.9); margin-bottom: 28px; }
 
 .hero__meta { display: flex; flex-wrap: wrap; gap: 16px 40px; margin: 0 0 28px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); max-width: 880px; }

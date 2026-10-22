@@ -416,3 +416,56 @@ p { margin: 0 0 1em; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Booklet band (top of page) ---------- */
+.booklet-band { background: var(--ink-2); color: #d8dde6; padding: clamp(56px, 7vw, 88px) 0; overflow: hidden; }
+.booklet-band__inner { display: grid; grid-template-columns: auto 1fr; gap: clamp(36px, 6vw, 80px); align-items: center; }
+.booklet-band__cover { display: block; width: clamp(180px, 22vw, 260px); transform: perspective(1200px) rotateY(-14deg) rotateZ(-1deg); transform-origin: left center; transition: transform .5s ease; border-radius: 4px 10px 10px 4px; box-shadow: -2px 0 0 #0a1322, 24px 30px 50px -20px rgba(0,0,0,.7); overflow: hidden; }
+.booklet-band__cover:hover { transform: perspective(1200px) rotateY(-4deg); }
+.booklet-band__cover img { width: 100%; height: auto; }
+.booklet-band__text .section__title { color: #fff; }
+.booklet-band__text p:not(.eyebrow) { max-width: 560px; color: #c3cad5; font-size: 18px; }
+.booklet-band__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn svg:first-child { width: 19px; height: 19px; }
+.btn:hover svg:first-child { transform: none; }
+
+/* Booklet link in the menu */
+.nav__links a.nav__booklet { display: inline-flex; align-items: center; gap: 7px; opacity: 1; color: var(--sand); font-weight: 600; }
+.nav.is-solid .nav__links a.nav__booklet, .nav.is-open .nav__links a.nav__booklet { color: var(--accent-dark); }
+.nav__booklet svg { width: 18px; height: 18px; }
+
+@media (max-width: 700px) {
+  .booklet-band__inner { grid-template-columns: 1fr; justify-items: start; }
+  .booklet-band__cover { width: 170px; }
+}
+
+/* ---------- Programme day tabs ---------- */
+.day-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 8px; }
+.day-tabs[hidden] { display: none; }
+.day-tabs button {
+  display: flex; align-items: center; gap: 14px; text-align: left; cursor: pointer;
+  font: inherit; color: var(--ink); background: var(--white);
+  border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.day-tabs button:hover { border-color: #d6cfc2; }
+.day-tabs button[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: #fff; box-shadow: 0 14px 30px -18px rgba(15,27,45,.6); }
+.day-tabs__num { font-family: var(--serif); font-weight: 300; font-size: 36px; line-height: 1; color: var(--accent); }
+.day-tabs button[aria-selected="true"] .day-tabs__num { color: var(--sand); }
+.day-tabs__text b { display: block; font-weight: 600; font-size: 17px; }
+.day-tabs__text small { display: block; font-size: 14.5px; color: var(--muted); }
+.day-tabs button[aria-selected="true"] small { color: #c3cad5; }
+
+/* in tab mode, show one day at a time; the tab already carries the day label */
+.days.is-tabbed .day { display: none; border-top: 0; padding-top: 24px; grid-template-columns: 1fr; }
+.days.is-tabbed .day.is-active { display: grid; }
+.days.is-tabbed .day:last-child { border-bottom: 0; }
+.days.is-tabbed .day__label { display: none; }
+
+@media (max-width: 560px) {
+  .day-tabs { gap: 6px; }
+  .day-tabs button { flex-direction: column; align-items: flex-start; gap: 4px; padding: 10px 12px; }
+  .day-tabs__num { font-size: 26px; }
+  .day-tabs__text b { font-size: 15.5px; }
+  .day-tabs__text small { font-size: 13px; }
+}

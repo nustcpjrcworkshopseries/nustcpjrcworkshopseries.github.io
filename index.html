@@ -48,6 +48,7 @@
         <span></span><span></span>
       </button>
       <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="booklet/" class="nav__booklet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5c3-1 6-1 10 1v14c-4-2-7-2-10-1z"/><path d="M22 5c-3-1-6-1-10 1v14c4-2 7-2 10-1z"/></svg>Booklet</a>
         <a href="#about">About</a>
         <a href="#programme">Programme</a>
         <a href="#outcomes">Outcomes</a>
@@ -78,7 +79,10 @@
           Register now
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
         </a>
-        <a href="#programme" class="btn btn--ghost">View programme</a>
+        <a href="booklet/" class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5c3-1 6-1 10 1v14c-4-2-7-2-10-1z"/><path d="M22 5c-3-1-6-1-10 1v14c4-2 7-2 10-1z"/></svg>
+          Programme booklet
+        </a>
       </div>
 
       <div class="countdown" id="countdown" hidden aria-live="off">
@@ -107,6 +111,30 @@
         <div><strong>15</strong><span>contact hours of lectures, labs and fieldwork</span></div>
         <div><strong>30</strong><span>participants, in six field groups of five</span></div>
         <div><strong>4</strong><span>lecturers from CAS and NUST</span></div>
+      </div>
+    </section>
+
+    <!-- ============ Programme booklet ============ -->
+    <section class="booklet-band" id="booklet" aria-labelledby="booklet-title">
+      <div class="wrap booklet-band__inner">
+        <a class="booklet-band__cover" href="booklet/" aria-label="Open the programme booklet">
+          <img src="assets/booklet-cover.jpg" alt="Cover of the programme booklet" width="420" height="594" loading="lazy">
+        </a>
+        <div class="booklet-band__text">
+          <p class="eyebrow eyebrow--light">Programme booklet</p>
+          <h2 id="booklet-title" class="section__title">The full programme, in your hands.</h2>
+          <p>Turn the pages of the 12-page workshop booklet: the timetable for all three days, learning outcomes, lecturers, preparation checklist and venue. Download it as an A5 PDF to print or keep on your phone.</p>
+          <div class="booklet-band__actions">
+            <a href="booklet/" class="btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5c3-1 6-1 10 1v14c-4-2-7-2-10-1z"/><path d="M22 5c-3-1-6-1-10 1v14c4-2 7-2 10-1z"/></svg>
+              Flip through the booklet
+            </a>
+            <a href="booklet/programme-booklet.pdf" class="btn btn--ghost" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
+              Download PDF
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -179,22 +207,18 @@
         <div class="section__head">
           <p class="eyebrow">03 · Programme</p>
           <h2 class="section__title">From the wide view to the close-up.</h2>
-          <p class="section__intro">Registration opens at <strong>8:30 AM</strong> on Day 1. Days 1 and 2 run <strong>9:00 AM – 5:00 PM</strong>; Day 3 closes at <strong>12:15 PM</strong>, ahead of Friday prayers. Open a session to see its content.</p>
-          <div class="booklet-links">
-            <a href="booklet/" class="btn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5c3-1 6-1 10 1v14c-4-2-7-2-10-1z"/><path d="M22 5c-3-1-6-1-10 1v14c4-2 7-2 10-1z"/></svg>
-              Flip through the programme booklet
-            </a>
-            <a href="booklet/programme-booklet.pdf" class="btn btn--outline" download>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
-              Download PDF
-            </a>
-          </div>
+          <p class="section__intro">Registration opens at <strong>8:30 AM</strong> on Day 1. Days 1 and 2 run <strong>9:00 AM – 5:00 PM</strong>; Day 3 closes at <strong>12:15 PM</strong>, ahead of Friday prayers. Pick a day, then open any session for its content.</p>
+        </div>
+
+        <div class="day-tabs" role="tablist" aria-label="Programme days" hidden>
+          <button type="button" role="tab" id="tab-day1" aria-controls="day1" aria-selected="true"><span class="day-tabs__num">01</span><span class="day-tabs__text"><b>Day 1</b><small>Wed 18 Nov · full day</small></span></button>
+          <button type="button" role="tab" id="tab-day2" aria-controls="day2" aria-selected="false" tabindex="-1"><span class="day-tabs__num">02</span><span class="day-tabs__text"><b>Day 2</b><small>Thu 19 Nov · field day</small></span></button>
+          <button type="button" role="tab" id="tab-day3" aria-controls="day3" aria-selected="false" tabindex="-1"><span class="day-tabs__num">03</span><span class="day-tabs__text"><b>Day 3</b><small>Fri 20 Nov · half day</small></span></button>
         </div>
 
         <ol class="days">
           <!-- Day 1 -->
-          <li class="day">
+          <li class="day" id="day1" role="tabpanel" aria-labelledby="tab-day1">
             <div class="day__label">
               <span class="day__num">01</span>
               <span class="day__tag">Wed · 18 Nov</span>
@@ -227,7 +251,7 @@
           </li>
 
           <!-- Day 2 -->
-          <li class="day">
+          <li class="day" id="day2" role="tabpanel" aria-labelledby="tab-day2">
             <div class="day__label">
               <span class="day__num">02</span>
               <span class="day__tag">Thu · 19 Nov</span>
@@ -253,7 +277,7 @@
           </li>
 
           <!-- Day 3 -->
-          <li class="day">
+          <li class="day" id="day3" role="tabpanel" aria-labelledby="tab-day3">
             <div class="day__label">
               <span class="day__num">03</span>
               <span class="day__tag">Fri · 20 Nov · half day</span>

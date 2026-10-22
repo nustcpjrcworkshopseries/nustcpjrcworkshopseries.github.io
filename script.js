@@ -105,7 +105,7 @@ document.querySelectorAll('.copy').forEach((btn) => {
 // ---------- Gentle reveal on scroll ----------
 (function () {
   if (!('IntersectionObserver' in window)) return;
-  const items = document.querySelectorAll('.section__head, .about__text, .about__figure, .chain, .audience-band > *, .day, .outcomes, .person, .prepare > *, .register > *, .venue > *');
+  const items = document.querySelectorAll('.section__head, .about__text, .about__figure, .chain, .audience-band > *, .booklet-band__inner, .days, .outcomes, .person, .prepare > *, .register > *, .venue > *');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (en.isIntersecting) {
@@ -115,4 +115,40 @@ document.querySelectorAll('.copy').forEach((btn) => {
     });
   }, { rootMargin: '0px 0px -8% 0px' });
   items.forEach((el) => { el.classList.add('reveal'); io.observe(el); });
+})();
+
+// ---------- Programme: one day at a time ----------
+(function () {
+  const tabs = document.querySelector('.day-tabs');
+  const list = document.querySelector('.days');
+  if (!tabs || !list) return;
+  const buttons = [...tabs.querySelectorAll('[role="tab"]')];
+
+  function select(btn, focus) {
+    buttons.forEach((b) => {
+      const on = b === btn;
+      b.setAttribute('aria-selected', String(on));
+      b.tabIndex = on ? 0 : -1;
+      document.getElementById(b.getAttribute('aria-controls')).classList.toggle('is-active', on);
+    });
+    if (focus) btn.focus();
+  }
+
+  tabs.hidden = false;
+  list.classList.add('is-tabbed');
+  buttons.forEach((b) => b.addEventListener('click', () => select(b)));
+  tabs.addEventListener('keydown', (e) => {
+    const i = buttons.indexOf(document.activeElement);
+    if (i < 0) return;
+    if (e.key === 'ArrowRight') select(buttons[(i + 1) % buttons.length], true);
+    if (e.key === 'ArrowLeft') select(buttons[(i - 1 + buttons.length) % buttons.length], true);
+  });
+
+  // During the workshop, open on today's day
+  let start = 0;
+  if (EVENT.start) {
+    const d = Math.floor((Date.now() - new Date(EVENT.start).setHours(0, 0, 0, 0)) / 864e5);
+    if (d >= 0 && d < buttons.length) start = d;
+  }
+  select(buttons[start]);
 })();

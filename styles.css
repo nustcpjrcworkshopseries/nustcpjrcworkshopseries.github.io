@@ -345,6 +345,7 @@ p { margin: 0 0 1em; }
 .contact__line span { overflow-wrap: break-word; min-width: 0; }
 .contact__line svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
 .contact__line:hover span { color: var(--accent-dark); }
+.contact__who { display: block; font-size: 14px; font-weight: 400; color: var(--muted); }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--ink); color: #aeb7c4; padding: 48px 0; font-size: 15.5px; }

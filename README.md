@@ -1,8 +1,8 @@
 # NUST × CPJRC Workshop Series — 2026
 
 One-page site for the **Training Workshop on Remote Sensing for Disaster Management**
-(18–20 November 2026), jointly organised by the China–Pakistan Joint Research Center on Earth Sciences (CPJRC)
-and IGIS, School of Civil and Environmental Engineering, NUST.
+(18–20 November 2026), jointly organized by the China–Pakistan Joint Research Center on Earth Sciences (CPJRC),
+IGIS, School of Civil and Environmental Engineering, NUST, and the Geological Survey of Pakistan (GSP).
 
 Plain HTML/CSS/JS served by GitHub Pages, with no build step.
 

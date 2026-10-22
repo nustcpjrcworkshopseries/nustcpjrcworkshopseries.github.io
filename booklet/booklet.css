@@ -128,8 +128,10 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 
 /* People */
 .people { list-style: none; margin: 0; padding: 0; }
-.people li { display: grid; grid-template-columns: 2.8em 1fr; gap: .9em; padding: .9em 0; border-top: 1px solid var(--line); }
-.people .mono { width: 2.8em; height: 2.8em; border-radius: 50%; background: var(--accent-soft); color: var(--accent-dark); display: grid; place-items: center; font-family: var(--serif); font-size: 1em; }
+.people li { display: grid; grid-template-columns: 4.6em 1fr; gap: 1em; align-items: start; padding: .9em 0; border-top: 1px solid var(--line); }
+/* avatar: photo or initials, 4.6em across */
+.people .mono { width: 4.6em; height: 4.6em; border-radius: 50%; background: var(--accent-soft); color: var(--accent-dark); display: grid; place-items: center; font-family: var(--serif); object-fit: cover; object-position: center 30%; }
+.people span.mono { font-size: 1.5em; width: 3.07em; height: 3.07em; }
 .people b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.25em; }
 .people i { display: block; font-style: normal; font-size: .88em; color: var(--accent-dark); margin: .15em 0 .35em; }
 .people p { margin: 0; font-size: .92em; color: var(--muted); }

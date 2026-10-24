@@ -131,6 +131,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .people li { display: grid; grid-template-columns: 4.6em 1fr; gap: 1em; align-items: start; padding: .9em 0; border-top: 1px solid var(--line); }
 /* avatar: photo or initials, 4.6em across */
 .people .mono { width: 4.6em; height: 4.6em; border-radius: 50%; background: var(--accent-soft); color: var(--accent-dark); display: grid; place-items: center; font-family: var(--serif); object-fit: cover; object-position: center 30%; }
+.people img.mono { box-shadow: 0 0 0 .14em #fff, 0 0 0 .2em var(--line); }
 .people span.mono { font-size: 1.5em; width: 3.07em; height: 3.07em; }
 .people b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.25em; }
 .people i { display: block; font-style: normal; font-size: .88em; color: var(--accent-dark); margin: .15em 0 .35em; }

@@ -478,4 +478,6 @@ p { margin: 0 0 1em; }
   .day-tabs__num { font-size: 26px; }
   .day-tabs__text b { font-size: 15.5px; }
   .day-tabs__text small { font-size: 13px; }
+  .day-tabs__sep { display: none; }
+  .day-tabs__topic { display: block; color: inherit; font-weight: 600; }
 }

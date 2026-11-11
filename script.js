@@ -3,8 +3,8 @@
 // Set `start` to null to show the fallback text in index.html and hide the countdown.
 // ==========================================================
 const EVENT = {
-  start: '2026-11-18T09:00:00+05:00',
-  end: '2026-11-20T12:15:00+05:00'
+  start: '2026-11-18T09:15:00+05:00',
+  end: '2026-11-20T15:30:00+05:00'
 };
 
 // ---------- Dates & countdown ----------

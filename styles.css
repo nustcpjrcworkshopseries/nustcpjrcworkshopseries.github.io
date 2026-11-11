@@ -268,7 +268,10 @@ p { margin: 0 0 1em; }
 .slot details li { margin-bottom: 6px; }
 .slot--break { font-size: 16px; color: var(--muted); padding-right: 0; }
 .slot--break time { color: var(--muted); font-weight: 400; }
-.slot--field summary span::after { content: "Field"; margin-left: 10px; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--accent-dark); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; vertical-align: 2px; white-space: nowrap; }
+.slot--field summary span::after, .slot--lab summary span::after, .slot--exercise summary span::after { content: "Field"; margin-left: 10px; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--accent-dark); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; vertical-align: 2px; white-space: nowrap; }
+.slot--field summary span::after { background: #e3efe7; color: #2f6a48; }
+.slot--lab summary span::after { content: "Lab"; }
+.slot--exercise summary span::after { content: "Exercise"; background: #efe6f3; color: #6f4483; }
 .day__note { margin: 16px 0 0; font-size: 16px; color: var(--muted); font-style: italic; }
 
 /* ---------- Outcomes ---------- */

@@ -464,6 +464,9 @@ p { margin: 0 0 1em; }
 .day-tabs button[aria-selected="true"] .day-tabs__num { color: var(--sand); }
 .day-tabs__text b { display: block; font-weight: 600; font-size: 17px; }
 .day-tabs__text small { display: block; font-size: 14.5px; color: var(--muted); }
+.day-tabs__sep { display: none; }
+.day-tabs__topic { display: block; font-weight: 600; color: var(--ink); }
+.day-tabs button[aria-selected="true"] .day-tabs__topic { color: #fff; }
 .day-tabs button[aria-selected="true"] small { color: #c3cad5; }
 
 /* in tab mode, show one day at a time; the tab already carries the day label */
@@ -478,6 +481,4 @@ p { margin: 0 0 1em; }
   .day-tabs__num { font-size: 26px; }
   .day-tabs__text b { font-size: 15.5px; }
   .day-tabs__text small { font-size: 13px; }
-  .day-tabs__sep { display: none; }
-  .day-tabs__topic { display: block; color: inherit; font-weight: 600; }
 }
